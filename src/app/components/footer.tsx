@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import SpCity from '../assets/sp-city.jpg'
-import { FaLinkedinIn } from "react-icons/fa";
+import Pri from '../assets/pri.png'
+import Ambima from '../assets/Selo-Gestao-Recursos.png'
 
 
 export default function Footer() {
@@ -44,11 +45,21 @@ export default function Footer() {
             </ul>
 
             <ul className="mt-8 flex gap-6">
-              <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/guepardo-investimentos/">
-                  <span className="sr-only">LinkedIn</span>
-                  <FaLinkedinIn size={22} className="fill-[#878787]" />
-                </a>
+              <li className='flex gap-x-4'>
+                <Image 
+                  src={Pri}
+                  alt="Signatory PRI"
+                  width={140}
+                  height={140}
+                  quality={100}
+                />
+                <Image 
+                  src={Ambima}
+                  alt="Ambima Regulamentação"
+                  width={140}
+                  height={140}
+                  quality={100}
+                />
               </li>
             </ul>
           </div>

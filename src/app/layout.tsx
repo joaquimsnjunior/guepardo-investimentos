@@ -6,6 +6,8 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import { ReactElement } from "react";
 import FooterExtension from "./components/footer-extension";
+import Loading from "./loading";
+import { Suspense } from 'react'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,9 +42,11 @@ export default function Layout({ children }: { children: ReactElement }) {
         )}
       >
           <Header />
+          <Suspense fallback={ <Loading />}>
           <main className="mx-auto overflow-hidden md:overflow-visible">
             {children}
           </main>
+          </Suspense>
         <Footer />
         <FooterExtension />
       </body>

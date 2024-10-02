@@ -13,11 +13,11 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import {
-  Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Mails } from 'lucide-react';
+import { ChartNoAxesGantt } from 'lucide-react';
 import Image from 'next/image'
 import logoGuepardo from '../assets/Guepardo-Logo-black.png'
 
@@ -57,7 +57,7 @@ export default function Header() {
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+            <ChartNoAxesGantt aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">

@@ -38,7 +38,7 @@ const products = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <header >
+    <header>
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
@@ -62,7 +62,7 @@ export default function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-1xl font-semibold  text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-1xl focus:outline-none font-semibold  text-gray-900">
               Investir
               <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
             </PopoverButton>

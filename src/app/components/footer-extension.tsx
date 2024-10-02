@@ -3,7 +3,7 @@ import React from 'react'
 export default function FooterExtension() {
   return (
     <div className="border-t border-gray-100 pt-8">
-      <p className="px-16 text-left text-xs/relaxed text-gray-500">
+      <p className="px-10 text-left text-xs/relaxed text-gray-500">
         A GUEPARDO INVESTIMENTOS LTDA DISTRIBUI APENAS COTAS DE FUNDOS DE INVESTIMENTOS NO QUAL
         FAZ A GESTÃO. A GUEPARDO INVESTIMENTOS LTDA NÃO COMERCIALIZA NEM DISTRIBUI COTAS DE
         OUTROS FUNDOS OU QUALQUER OUTRO ATIVO FINANCEIRO. AS INFORMAÇÕES CONTIDAS NESSE WEBSITE
